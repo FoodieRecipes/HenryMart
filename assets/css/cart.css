@@ -1,0 +1,19 @@
+.cart-container { max-width: 1000px; margin: 2rem auto; }
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 2rem;
+}

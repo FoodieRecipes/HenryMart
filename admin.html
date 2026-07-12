@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - HenryMart</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .admin-container {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            min-height: 100vh;
+        }
+        .sidebar {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 1rem;
+        }
+        .sidebar a {
+            display: block;
+            padding: 12px 20px;
+            color: white;
+            text-decoration: none;
+            margin: 8px 0;
+            border-radius: 8px;
+        }
+        .sidebar a:hover, .sidebar a.active {
+            background: #e74c3c;
+        }
+        .admin-content {
+            padding: 2rem;
+            background: #f8f9fa;
+        }
+        .dashboard-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background: #34495e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2 style="margin-bottom:2rem;">🛠️ HenryMart Admin</h2>
+            <a href="#" class="active">📊 Dashboard</a>
+            <a href="#">📦 Products</a>
+            <a href="#">📋 Orders</a>
+            <a href="#">💬 Comments</a>
+            <a href="#">👥 Customers</a>
+            <a href="index.html" style="margin-top:3rem;">← Back to Store</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="admin-content">
+            <h1>Dashboard</h1>
+            <p>Welcome back, Admin (Dr. Anietie)</p>
+
+            <!-- Stats -->
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3>Total Sales</h3>
+                    <h2>₦248,500</h2>
+                    <small style="color:green;">↑ 12% this week</small>
+                </div>
+                <div class="stat-card">
+                    <h3>Orders Today</h3>
+                    <h2>18</h2>
+                    <small>5 pending delivery</small>
+                </div>
+                <div class="stat-card">
+                    <h3>Products</h3>
+                    <h2>42</h2>
+                    <small>8 low on stock</small>
+                </div>
+                <div class="stat-card">
+                    <h3>Customers</h3>
+                    <h2>187</h2>
+                    <small>Active this month</small>
+                </div>
+            </div>
+
+            <!-- Recent Orders -->
+            <h2>Recent Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#GM-3921</td>
+                        <td>John Doe</td>
+                        <td>₦12,500</td>
+                        <td><span style="color:green;">Completed</span></td>
+                        <td><button onclick="alert('Order viewed!')">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#GM-3920</td>
+                        <td>Aisha Bello</td>
+                        <td>₦8,400</td>
+                        <td><span style="color:orange;">Pending</span></td>
+                        <td><button onclick="alert('Order viewed!')">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br><br>
+            <button onclick="alert('New product added (demo)')" class="cta-button">+ Add New Product</button>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

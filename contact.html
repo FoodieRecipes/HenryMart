@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HenryMart</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🍔 HenryMart</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="comment-section" style="max-width:700px;">
+            <h2>Contact Us</h2>
+            <p>Send us a message. Dr. Anietie will get back to you.</p>
+            
+            <input type="text" id="contact-name" placeholder="Your Name" value="Dr. Anietie">
+            <input type="email" id="contact-email" placeholder="Your Email">
+            <textarea id="contact-message" rows="6" placeholder="Your message or inquiry..."></textarea>
+            
+            <button onclick="sendContactMessage()" class="cta-button" style="width:100%;">Send Message</button>
+            <div id="contact-status"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026  HenryMart • Henrymart.store</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        function sendContactMessage() {
+            const status = document.getElementById('contact-status');
+            status.style.color = "green";
+            status.textContent = "✅ Message sent successfully! We will respond shortly.";
+            
+            // Clear form
+            setTimeout(() => {
+                document.getElementById('contact-message').value = '';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

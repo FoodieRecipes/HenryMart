@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HenryMart - Fresh Groceries • Fast Delivery</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🍔 HenryMart</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="admin.html" target="_blank" class="nav-domain">HenryMart Admin</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to HenryMart</h1>
+            <br>
+            <p>Fresh Groceries • Fast Delivery</p>
+            <br>
+            <button onclick="window.location.href='products.html'" class="cta-button">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="section" id="featured">
+        <h2>Featured Products</h2>
+        <div class="products-grid" id="featured-products"></div>
+    </section>
+
+    <section class="section comment-section-wrapper">
+        <div class="comment-section">
+            <h2>Message from Dr. Anietie</h2>
+            <p>Send instructions or comments</p>
+            <input type="text" id="name" value="Dr. Anietie">
+            <textarea id="comment" rows="5" placeholder="Enter your message or instructions here..."></textarea>
+            <button onclick="submitComment()" class="cta-button">Send Instruction</button>
+            <div id="comment-status"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026  Store • Henrymart.store</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/products.js"></script>
+</body>
+</html>

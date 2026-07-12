@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments - HenryMart</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🍔 HenryMart</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="comments.html">Comments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="comment-section">
+            <h2>Customer Comments &amp; Instructions</h2>
+            <p>Dr. Anietie will review all messages.</p>
+            <input type="text" id="name" value="Dr. Anietie" placeholder="Your Name">
+            <textarea id="comment" rows="8" placeholder="Write your comment or instruction..."></textarea>
+            <button onclick="submitComment()" class="cta-button" style="width:100%;">Submit Comment</button>
+            <div id="comment-status"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 HenryMart • Henrymart.store</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
