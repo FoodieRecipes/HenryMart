@@ -1,0 +1,207 @@
+/* ===========================
+   SMARTLEARN ACADEMY CSS
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:#003366;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+/* Navigation */
+
+nav{
+    background:#00509E;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Main Content */
+
+.container{
+    width:85%;
+    margin:auto;
+    padding:30px;
+}
+
+h2{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+p{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+/* Images */
+
+img{
+    width:300px;
+    border-radius:10px;
+    margin:10px;
+    box-shadow:0px 4px 8px gray;
+}
+
+.gallery{
+    text-align:center;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th{
+    background:#003366;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+table tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+table tr:hover{
+    background:#dbeafe;
+}
+
+/* Forms */
+
+form{
+    width:60%;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0px 5px 15px rgba(0,0,0,.2);
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+textarea{
+    resize:none;
+}
+
+input[type="submit"]{
+    background:#003366;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:18px;
+}
+
+input[type="submit"]:hover{
+    background:#00509E;
+}
+
+/* Buttons */
+
+.button{
+    display:inline-block;
+    background:#003366;
+    color:white;
+    padding:12px 20px;
+    text-decoration:none;
+    border-radius:5px;
+    margin-top:15px;
+}
+
+.button:hover{
+    background:#00509E;
+}
+
+/* Footer */
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Lists */
+
+ul{
+    margin-left:40px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.container{
+    width:95%;
+}
+
+form{
+    width:95%;
+}
+
+nav a{
+    display:block;
+    margin:10px;
+}
+
+img{
+    width:90%;
+}
+
+}
