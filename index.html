@@ -51,10 +51,12 @@
     <section class="section comment-section-wrapper">
         <div class="comment-section">
             <h2>Message from Dr. Anietie</h2>
-            <p>Send instructions or comments</p>
-            <input type="text" id="name" value="Dr. Anietie">
-            <textarea id="comment" rows="5" placeholder="Enter your message or instructions here..."></textarea>
-            <button onclick="submitComment()" class="cta-button">Send Instruction</button>
+            <form id="comment-form">
+                <input type="text" id="name" value="Dr. Anietie" required>
+                <input type="email" id="email" placeholder="Your Email (optional)">
+                <textarea id="message" rows="5" placeholder="Enter your message or instructions..." required></textarea>
+                <button type="submit" class="cta-button">Send Instruction</button>
+            </form>
             <div id="comment-status"></div>
         </div>
     </section>
@@ -65,5 +67,37 @@
 
     <script src="assets/js/script.js"></script>
     <script src="assets/js/products.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        // Initialize EmailJS with your Public Key
+        emailjs.init("o5DbEyLYyWBEk78xM");
+
+        document.getElementById('comment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const status = document.getElementById('comment-status');
+            status.innerHTML = "Sending...";
+
+            const templateParams = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value || "No email provided",
+                message: document.getElementById('message').value,
+                date: new Date().toLocaleString()
+            };
+
+            emailjs.send("service_yqgx6ez", "template_ashlupn", templateParams)
+                .then(() => {
+                    status.style.color = "green";
+                    status.innerHTML = "✅ Message sent successfully to your email!";
+                    document.getElementById('message').value = "";
+                })
+                .catch((error) => {
+                    status.style.color = "red";
+                    status.innerHTML = "❌ Failed to send. Please try again.";
+                    console.error(error);
+                });
+        });
+    </script>
 </body>
 </html>
