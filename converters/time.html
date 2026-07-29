@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+
+
+
+<title>Time Converter | HenryMart</title>
+
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/converter.css">
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+<header>
+
+
+
+<nav>
+
+
+
+<div class="logo">
+
+HenryMart
+
+</div>
+
+
+
+
+
+<a class="nav-domain" href="../index.html">
+
+Home
+
+</a>
+
+
+
+
+
+</nav>
+
+
+
+</header>
+
+
+
+
+
+
+
+<section class="converter-page">
+
+
+
+
+
+<div class="converter-card">
+
+
+
+
+
+
+
+<h1>
+
+Time Converter
+
+</h1>
+
+
+
+
+
+<p class="description">
+
+Convert hours, minutes and seconds easily
+
+</p>
+
+
+
+
+
+
+
+
+
+<div class="converter-group">
+
+
+
+
+
+<label>
+
+Enter Value
+
+</label>
+
+
+
+
+
+
+
+<input
+
+id="inputValue"
+
+type="number"
+
+placeholder="Enter time value">
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="converter-group">
+
+
+
+
+
+<label>
+
+Select Conversion
+
+</label>
+
+
+
+
+
+
+
+<select id="type">
+
+
+
+
+
+
+
+<option value="hour-minute">
+
+Hour → Minute
+
+</option>
+
+
+
+
+
+
+
+<option value="minute-hour">
+
+Minute → Hour
+
+</option>
+
+
+
+
+
+
+
+<option value="minute-second">
+
+Minute → Second
+
+</option>
+
+
+
+
+
+
+
+<option value="second-minute">
+
+Second → Minute
+
+</option>
+
+
+
+
+
+
+
+<option value="day-hour">
+
+Day → Hour
+
+</option>
+
+
+
+
+
+
+
+<option value="hour-day">
+
+Hour → Day
+
+</option>
+
+
+
+
+
+
+
+</select>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<button class="convert-btn" onclick="convert()">
+
+
+
+
+
+Convert Now
+
+
+
+
+
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="result-card">
+
+
+
+
+
+<h3>
+
+Converted Result
+
+</h3>
+
+
+
+
+
+
+
+<p id="result">
+
+Result will appear here
+
+</p>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<script src="../assets/js/converter.js"></script>
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>

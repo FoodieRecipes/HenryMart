@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Length Converter | HenryMart</title>
+
+<link rel="stylesheet" href="../assets/css/converter.css">
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav>
+
+<div class="logo">
+HenryMart
+</div>
+
+
+<a class="nav-domain" href="../index.html">
+Home
+</a>
+
+
+</nav>
+
+</header>
+
+
+
+<section class="converter-page">
+
+
+<div class="converter-card">
+
+
+<h1>
+Length Converter
+</h1>
+
+
+<p class="description">
+Convert meters, kilometers and centimeters
+</p>
+
+
+
+<div class="converter-group">
+
+<label>
+Enter Value
+</label>
+
+
+<input 
+id="inputValue"
+type="number"
+placeholder="Enter number">
+
+
+</div>
+
+
+
+
+<div class="converter-group">
+
+
+<label>
+Select Conversion
+</label>
+
+
+<select id="type">
+
+
+<option value="meter-kilometer">
+Meter → Kilometer
+</option>
+
+
+<option value="kilometer-meter">
+Kilometer → Meter
+</option>
+
+
+<option value="meter-centimeter">
+Meter → Centimeter
+</option>
+
+
+<option value="centimeter-meter">
+Centimeter → Meter
+</option>
+
+
+<option value="meter-mile">
+Meter → Mile
+</option>
+
+
+<option value="mile-meter">
+Mile → Meter
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+<button class="convert-btn" onclick="convert()">
+
+Convert Now
+
+</button>
+
+
+
+
+<div class="result-card">
+
+<h3>
+Converted Result
+</h3>
+
+
+<p id="result">
+Result will appear here
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+<script src="../assets/js/converter.js"></script>
+
+
+</body>
+
+</html>

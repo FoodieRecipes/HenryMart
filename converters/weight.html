@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<title>Weight Converter | HenryMart</title>
+
+<link rel="stylesheet" href="../assets/css/converter.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+
+
+<body>
+
+
+<header>
+
+<nav>
+
+<div class="logo">
+HenryMart
+</div>
+
+
+<a class="nav-domain" href="../index.html">
+Home
+</a>
+
+
+</nav>
+
+</header>
+
+
+
+
+<section class="converter-page">
+
+
+<div class="converter-card">
+
+
+
+<h1>
+Weight Converter
+</h1>
+
+
+<p class="description">
+Convert kilograms, grams and pounds
+</p>
+
+
+
+
+<div class="converter-group">
+
+
+<label>
+Enter Value
+</label>
+
+
+<input
+id="inputValue"
+type="number"
+placeholder="Enter weight">
+
+
+</div>
+
+
+
+
+<div class="converter-group">
+
+
+<label>
+Select Conversion
+</label>
+
+
+<select id="type">
+
+
+<option value="kg-gram">
+Kilogram → Gram
+</option>
+
+
+<option value="gram-kg">
+Gram → Kilogram
+</option>
+
+
+<option value="kg-pound">
+Kilogram → Pound
+</option>
+
+
+<option value="pound-kg">
+Pound → Kilogram
+</option>
+
+
+<option value="kg-ton">
+Kilogram → Ton
+</option>
+
+
+<option value="ton-kg">
+Ton → Kilogram
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+<button class="convert-btn" onclick="convert()">
+
+Convert Now
+
+</button>
+
+
+
+<div class="result-card">
+
+<h3>
+Converted Result
+</h3>
+
+
+<p id="result">
+Result will appear here
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+<script src="../assets/js/converter.js"></script>
+
+
+</body>
+
+
+</html>

@@ -1,3 +1,7 @@
+<?php
+require_once "config/auth.php";
+require_once "config/db.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +18,8 @@
             <div class="logo">🍔 HenryMart</div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="products.php">Products</a></li>
+                <li><a href="cart.php">Cart (<span id="cart-count">0</span>)</a></li>
             </ul>
         </nav>
     </header>

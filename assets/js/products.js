@@ -53,7 +53,7 @@ function renderProducts(containerId, productList) {
                 <div class="price">₦${product.price.toLocaleString()}</div>
                 <div style="display:flex; gap:10px; margin-top:15px;">
                     <button class="add-to-cart" onclick='addToCart(${JSON.stringify(product)})'>Add to Cart</button>
-                    <a href="product_details.html?id=${product.id}" class="view-details">View Details</a>
+                    <a href="product.php?id=${product.id}" class="view-details">View Details</a>
                 </div>
             </div>
         `;

@@ -1,3 +1,7 @@
+<?php
+require_once "config/auth.php";
+require_once "config/db.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,9 +18,9 @@
             <div class="logo">🍔 HenryMart</div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="products.php">Products</a></li>
+                <li><a href="cart.php">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="checkout.php">Checkout</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +29,7 @@
         <h2>Your Shopping Cart</h2>
         <div id="cart-items"></div>
         <div class="total" id="cart-total">Total: ₦0</div>
-        <button onclick="window.location.href='checkout.html'" class="cta-button" style="width:100%; margin-top:2rem;">Proceed to Checkout</button>
+        <button onclick="window.location.href='checkout.php'" class="cta-button" style="width:100%; margin-top:2rem;">Proceed to Checkout</button>
     </section>
 
     <footer>
