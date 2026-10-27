@@ -215,6 +215,8 @@ padding:80px;
 
 <hr>
 
+<a href="index.php">🏠 Home</a>
+
 <a href="products.php">🛒 Products</a>
 
 <a href="wishlist.php">❤️ Wishlist</a>

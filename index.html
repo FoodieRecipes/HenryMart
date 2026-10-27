@@ -2,116 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HenryMart - Fresh Groceries • Fast Delivery</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/products.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/converter.css">
+    <meta http-equiv="refresh" content="0; url=index.php">
+    <title>Redirecting to HenryMart...</title>
+    <script>
+        window.location.replace("index.php");
+    </script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">🍔 HenryMart</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.php">Products</a></li>
-                <li><a href="cart.php">Cart (<span id="cart-count">0</span>)</a></li>
-                <li><a href="checkout.php">Checkout</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li>
-                    <select id="converterMenu" onchange="goToConverter()">
-                        <option value="">Conversions</option>
-                        <option value="length">Length Converter</option>
-                        <option value="area">Area Converter</option>
-                        <option value="weight">Weight Converter</option>
-                        <option value="volume">Volume Converter</option>
-                        <option value="temperature">Temperature Converter</option>
-                        <option value="speed">Speed Converter</option>
-                        <option value="time">Time Converter</option>
-                    </select>
-                </li>
-            </ul>
-            <a href="admin.html" target="_blank" class="nav-domain">HenryMart Admin</a>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to HenryMart</h1>
-            <br>
-            <p>Fresh Groceries • Fast Delivery</p>
-            <br>
-            <button onclick="window.location.href='products.php'" class="cta-button">Shop Now</button>
-        </div>
-    </section>
-    <br><br>
-    <section>
-        <div style="text-align: center; margin: 5rem 0;">
-            <p>Click the button below to view the 5 Pages Assignment</p>
-            <br><br>
-            <button onclick="window.location.href='5Pages/index.html'" class="cta-button" 
-            style="text-decoration:none; display:inline-block;">View 5 Pages Assignment</button>
-        </div>
-    </section>
-
-    <section class="section" id="featured">
-        <h2>Featured Products</h2>
-        <div class="products-grid" id="featured-products"></div>
-    </section>
-
-    <section class="section comment-section-wrapper">
-        <div class="comment-section">
-            <h2>Message from Dr. Anietie</h2>
-            <form id="comment-form">
-                <input type="text" id="name" value="Dr. Anietie" required>
-                <input type="email" id="email" placeholder="Your Email (optional)">
-                <textarea id="message" rows="5" placeholder="Enter your message or instructions..." required></textarea>
-                <button type="submit" class="cta-button">Send Instruction</button>
-            </form>
-            <div id="comment-status"></div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026  Store • Henrymart.store</p>
-    </footer>
-    
-    <script src="assets/js/converter.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/products.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-    <script>
-        // Initialize EmailJS with your Public Key
-        emailjs.init("o5DbEyLYyWBEk78xM");
-
-        document.getElementById('comment-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const status = document.getElementById('comment-status');
-            status.innerHTML = "Sending...";
-
-            const templateParams = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value || "No email provided",
-                message: document.getElementById('message').value,
-                date: new Date().toLocaleString()
-            };
-
-            emailjs.send("service_yqgx6ez", "template_ashlupn", templateParams)
-                .then(() => {
-                    status.style.color = "green";
-                    status.innerHTML = "✅ Message sent successfully to your email!";
-                    document.getElementById('message').value = "";
-                })
-                .catch((error) => {
-                    status.style.color = "red";
-                    status.innerHTML = "❌ Failed to send. Please try again.";
-                    console.error(error);
-                });
-        });
-    </script>
+    <p>Loading HenryMart... If you are not redirected, <a href="index.php">click here</a>.</p>
 </body>
 </html>

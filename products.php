@@ -1,6 +1,8 @@
 <?php
 require_once "config/auth.php";
 require_once "config/db.php";
+
+$userName = $_SESSION['fullname'] ?? 'User';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,10 +19,13 @@ require_once "config/db.php";
         <nav>
             <div class="logo">🍔 HenryMart</div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="products.php">Products</a></li>
                 <li><a href="cart.php">Cart (<span id="cart-count">0</span>)</a></li>
                 <li><a href="checkout.php">Checkout</a></li>
+                <li><a href="orders.php">My Orders</a></li>
+                <li><a href="profile.php">Profile</a></li>
+                <li><a href="logout.php" style="color:#e74c3c; font-weight:bold;">Logout (<?= htmlspecialchars($userName); ?>)</a></li>
             </ul>
         </nav>
     </header>
@@ -31,7 +36,7 @@ require_once "config/db.php";
     </section>
 
     <footer>
-        <p>&copy; 2026  HenryMart • Henrymart.store</p>
+        <p>&copy; 2026 HenryMart • Henrymart.store</p>
     </footer>
 
     <script src="assets/js/script.js"></script>
